@@ -4,5 +4,14 @@
     <string name="app_name">Seno y Coseno</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="tvfuncion">Funcion:</string>
+    <string name="tvangulo">Angulo:</string>
+    <string name="rb0_2pi">0 - 2PI</string>
+    <string name="rbrango">Rango</string>
+    <string name="tvinicio">Inicio:</string>
+    <string name="tvfin"></string>
+    <string name="tvfinn">Fin:</string>
+    <string name="btgraficar">Graficar:</string>
+    
 
 </resources>

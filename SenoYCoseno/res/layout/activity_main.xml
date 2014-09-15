@@ -7,10 +7,112 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.senoycoseno.MainActivity" >
+    
+    
+    
+    
+    
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/linearLayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp" >
+
+        <TextView
+            android:id="@+id/textViewfunciom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvfuncion" />
+
+        <ListView
+            android:id="@+id/listViewfunciones"
+            android:layout_width="match_parent"
+            android:layout_height="134dp" >
+        </ListView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewangulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="@string/tvangulo" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewangulo"
+        android:layout_below="@+id/textViewangulo"
+        android:layout_marginTop="16dp" >
+
+        <RadioButton
+            android:id="@+id/radio0_2pi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/rb0_2pi" />
+
+        <RadioButton
+            android:id="@+id/radiorango"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rbrango" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewfin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewinicio"
+        android:layout_below="@+id/editTextinicio"
+        android:layout_marginTop="18dp"
+        android:text="@string/tvfinn" />
+
+    <EditText
+        android:id="@+id/editTextinicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_below="@+id/radioGroup1"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textViewinicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextinicio"
+        android:layout_alignBottom="@+id/editTextinicio"
+        android:layout_alignLeft="@+id/radioGroup1"
+        android:text="@string/tvinicio" />
+
+    <EditText
+        android:id="@+id/editTextfin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewfin"
+        android:layout_alignBottom="@+id/textViewfin"
+        android:layout_alignLeft="@+id/editTextinicio"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/buttongraficar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btgraficar" />
+    
+
+   
 
 </RelativeLayout>
